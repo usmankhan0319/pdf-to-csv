@@ -2,13 +2,12 @@
     "builds": [
       {
         "src": "main.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb" }
+        "use": "@vercel/python"
       }
     ],
     "routes": [
       {
-        "src": "/upload-pdf/",
+        "src": "/(.*)",
         "dest": "main.py"
       }
     ]
