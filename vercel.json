@@ -16,5 +16,10 @@
   ],
   "env": {
     "PORT": "8000"
+  },
+  "functions": {
+    "main.py": {
+      "runtime": "python3.8"
+    }
   }
 }
