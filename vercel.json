@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "main.py",
-      "use": "@now/python@3.8",
+      "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb" }
     }
   ],
