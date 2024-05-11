@@ -1,19 +1,15 @@
 {
-  "builds": [
-    {
-      "src": "main.py",
-      "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb" }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/upload-pdf/",
-      "dest": "main.py"
-    },
-    { "handle": "filesystem" }
-  ],
-  "env": {
-    "PORT": "8000"
+    "builds": [
+      {
+        "src": "main.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb" }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/upload-pdf/",
+        "dest": "main.py"
+      }
+    ]
   }
-}
